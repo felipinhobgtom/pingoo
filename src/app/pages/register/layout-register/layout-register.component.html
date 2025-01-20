@@ -1,7 +1,21 @@
 <main>
     <app-header></app-header>
     <app-main>
-            
+        <app-section-form>
+            <h1 id="title">turn into a <span id="penguin">penguin!</span></h1>
+            <app-form-component>
+                <app-input-component inputType="text" labelFor="Name" inputName="name"
+                    placeholder="your name here..." />
+                <app-input-component inputType="email" labelFor="E-mail" inputName="email"
+                    placeholder="your e-mail here..." />
+                <app-input-component inputType="password" labelFor="Password" inputName="password"
+                    placeholder="your password here..." />
+                <app-input-component inputType="text" labelFor="Postal Code" inputName="zipcode"
+                    placeholder="your zip-code here..." />
+                <app-input-component inputType="text" labelFor="Address" inputName="endereco" />
+                <app-input-component inputType="text" labelFor="Neighborhood" inputName="bairro" />
+            </app-form-component>
+        </app-section-form>
     </app-main>
     <app-footer></app-footer>
 </main>
