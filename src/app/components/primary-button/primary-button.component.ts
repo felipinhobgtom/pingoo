@@ -9,6 +9,10 @@ type ButtonActionTypes = 'submit' | 'navigate';
   styleUrl: './primary-button.component.scss',
 })
 export class PrimaryButtonComponent {
+
+  @Input()
+  buttonName: string = "";
+
   @Input()
   actionType: ButtonActionTypes = 'navigate';
 
