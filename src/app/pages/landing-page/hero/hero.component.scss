@@ -1,0 +1,38 @@
+@import "../../../../styles.scss";
+
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    h1{
+        text-align: left;
+        font-size: calc($largo - 0.2rem);
+        background: linear-gradient(120deg, $ice, $cream);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-right: 15px;
+    }
+
+    span{
+        font-family: $secondary;
+        font-weight: $regular;
+        color: $blanco;
+        text-align: right;
+        font-size: calc($normal - 0.25rem);
+    }
+}
+
+@media(min-width: 768px){
+    .hero-section{
+        h1{
+            font-size: calc($largo + 2rem);
+        }
+
+        span{
+            width: 50%;
+            font-size: $medio;
+        }
+    }
+}

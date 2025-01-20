@@ -1,0 +1,23 @@
+@import '../../../styles.scss';
+
+.btn{
+    padding: 10px 0;
+    width: 100%;
+    background: transparent;
+    border: none;
+    font-size: $normal;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &.btn-primary{
+        color: $nino;
+        background: $lora;
+    }
+}
+
+@media(min-width: 768px){
+    .btn{
+        font-size: $medio;
+        padding: 20px 0;
+    }
+}

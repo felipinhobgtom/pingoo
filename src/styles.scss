@@ -16,3 +16,29 @@ $mint: #dff7fa;
 // tipografias
 $primary: "Bebas Neue", sans-serif;
 $secondary: "Rubik", sans-serif;
+
+// font-sizes
+$normal: 1.5rem;
+$medio: 2.35rem;
+$largo: 3.15rem;
+
+// font-weights
+$regular: 400;
+$medium: 500;
+$bold: 600;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $primary;
+}
+
+#penguin {
+  color: $lora;
+  font-weight: $bold;
+}
+
+#teamwork{
+    color: $mint;
+}

@@ -1,0 +1,39 @@
+@import "../../../../styles.scss";
+
+.star-section {
+  width: 100%;
+  max-width: 100%;
+
+  .star-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: $medio;
+
+    img {
+      width: calc($largo + 2rem);
+      margin-right: 15px;
+    }
+
+    h1 {
+      color: $blanco;
+      text-align: right;
+      font-size: $normal;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .star-section {
+    .star-container {
+
+        img{
+            width: calc($largo + 8rem);
+        }
+      h1 {
+        font-size: $medio;
+      }
+    }
+  }
+}
