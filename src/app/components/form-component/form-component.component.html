@@ -1,7 +1,20 @@
-<form>
+<form [formGroup]="registerForm" (ngSubmit)="sendData()">
         <div class="input-wrapper">
-                <ng-content></ng-content>
+                <div class="input">
+                        <label for="name" class="labelFor">Nome</label>
+                        <input class="input" type="text" name="name" placeholder="Your name here..."
+                                formControlName="name">
+                </div>
+                <div class="input">
+                        <label for="email" class="labelFor">E-mail</label>
+                        <input class="input" type="email" name="email" placeholder="Your e-mail here..."
+                                formControlName="email">
+                </div>
+                <div class="input">
+                        <label for="password" class="labelFor">Password</label>
+                        <input class="input" type="password" name="password" placeholder="Your password here..."
+                                formControlName="password">
+                </div>
         </div>
-        <app-primary-button [actionType]="'submit'" (submitEvent)="onSubmit()" buttonName="Join the igloo!">
-        </app-primary-button>
+        <app-primary-button [actionType]="'submit'" buttonName="Join the igloo!"></app-primary-button>
 </form>

@@ -1,12 +1,30 @@
 @import "../../../styles.scss";
 
-form .input-wrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-    max-width: 100%;
-    margin-bottom: 1.5rem;
-    gap: 1rem;
+form .input-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+
+  .labelFor {
+    color: $mint;
+    font-size: calc($largo - 1rem);
+  }
+
+  .input {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: $mint;
+    font-size: $normal;
+  }
 }

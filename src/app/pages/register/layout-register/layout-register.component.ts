@@ -3,7 +3,6 @@ import { HeaderComponent } from '../../../components/header/header.component';
 import { FooterComponent } from '../../../components/footer/footer.component';
 import { MainComponent } from '../../../components/main/main.component';
 import { SectionFormComponent } from '../../../components/section-form/section-form.component';
-import { InputComponentComponent } from '../../../components/input-component/input-component.component';
 import { FormComponentComponent } from '../../../components/form-component/form-component.component';
 
 @Component({
@@ -13,14 +12,11 @@ import { FormComponentComponent } from '../../../components/form-component/form-
     FooterComponent,
     MainComponent,
     SectionFormComponent,
-    InputComponentComponent,
     FormComponentComponent,
   ],
   templateUrl: './layout-register.component.html',
   styleUrl: './layout-register.component.scss',
 })
 export class LayoutRegisterComponent {
-  onSubmit(): void {
-    
-  }
+
 }
