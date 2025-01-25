@@ -14,7 +14,7 @@ export class DevComponent implements OnInit {
   constructor(private req: BackendRequestService) {}
   ngOnInit(): void {
     this.req.getFromDb().subscribe({
-      next: (data: User[]) => {
+      next: (data) => {
         this.usuarios = data;
       },
     });
