@@ -15,7 +15,7 @@ export class BackendRequestService {
     return this.http.post<any>(this.apiUrl, user);
   }
 
-  getFromDb(): Observable<User[]>{
+  getFromDb(): Observable<User[]> {
     return this.http.get<User[]>(this.apiUrl);
   }
 }

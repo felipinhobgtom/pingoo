@@ -15,6 +15,19 @@
                         <input class="input" type="password" name="password" placeholder="Your password here..."
                                 formControlName="password">
                 </div>
+                <div class="input">
+                        <label for="zipcode" class="labelFor">Zip Code</label>
+                        <input class="input" type="text" name="zipcode" placeholder="Your zipcode here..."
+                                formControlName="zipcode" (blur)="useCep()" maxlength="8">
+                </div>
+                <div class="input">
+                        <label for="bairro" class="labelFor">Neighborhood</label>
+                        <input class="input" type="text" name="bairro" placeholder="" formControlName="bairro">
+                </div>
+                <div class="input">
+                        <label for="logradouro" class="labelFor">Address</label>
+                        <input class="input" type="text" name="logradouro" placeholder="" formControlName="logradouro">
+                </div>
         </div>
         <app-primary-button [actionType]="'submit'" buttonName="Join the igloo!"></app-primary-button>
 </form>
